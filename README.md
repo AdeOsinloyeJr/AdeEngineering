@@ -23,7 +23,9 @@ Setup of two EC2 instances to securely transfer files using `scp`, with proper S
 ---
 
 ## 🤝 Connect With Me
-[![LinkedIn](https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg) LinkedIn](https://www.linkedin.com/in/adediran-osinloye/)
+
+**🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/adediran-osinloye/)**
+
 
 ---
 
