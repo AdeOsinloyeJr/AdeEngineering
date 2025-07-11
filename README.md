@@ -1,18 +1,32 @@
-<h1>Hi, I'm Ade! <br/><a href="https://github.com/AdeOsinloyeJr">Aspiring DevOps Engineer</a>, 
-<h2>👨‍💻 Cloud Engineering Projects:</h2>
+# 👋 Hi, I'm Ade!  
+### 🚀 Aspiring DevOps & Cloud Engineer
 
-- <b>AWS EC2 Web Server Deployment & Secure Inter-Server Communication</b>
-  - []()
+Welcome to my cloud engineering project portfolio. I'm passionate about building and managing modern infrastructure using AWS, Linux, and automation tools. This repo contains hands-on, real-world projects I’ve built to sharpen my DevOps and cloud computing skills.
 
-<b> 📄 Certifications </b>
-- [Security+] (https://www.credly.com/badges/d4741e33-4b5a-44ff-af58-52c43cdbf076/public_url)
+---
 
-<h2> 🤳 Connect with me:</h2>
+## 👨‍💻 Cloud & Infrastructure Projects
 
+### 🔹 [Deploying Apache and Chrony on EC2](./ec2-apache-chrony-setup/README.md)
+Launch and configure a web server using Apache (`httpd`) on Amazon Linux 2023, with `chronyd` for time synchronization. Includes Linux package management, service configuration, and browser verification.
+> **Tools:** AWS EC2, Amazon Linux, systemctl, yum, rpm
 
-[<img align="left" alt="JoshMadakor | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+### 🔹 SCP File Transfer Between EC2s *(Coming Soon)*
+Setup of two EC2 instances to securely transfer files using `scp`, with proper SSH key and permissions configuration.
+> **Tools:** EC2, SSH, SCP, Linux CLI
 
+---
 
-[linkedin]: (https://www.linkedin.com/in/adediran-osinloye/)
+## 📄 Certifications
+- [CompTIA Security+](https://www.credly.com/badges/d4741e33-4b5a-44ff-af58-52c43cdbf076/public_url)
+
+---
+
+## 🤝 Connect With Me
+[![LinkedIn](https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg) LinkedIn](https://www.linkedin.com/in/adediran-osinloye/)
+
+---
+
+> 💡 More projects coming soon: Data pipelines, IaC with Terraform, monitoring stacks, and more!
 
 
