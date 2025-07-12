@@ -51,7 +51,7 @@ You’ll walk through:
    ![Step 9](images/09_chrony_confirmation.png)
 
 10. **Enable Chrony Service**  
-   ![Step 10](images/10_Chrony_enabled.png)
+   ![Step 10](images/10_chrony_enabled.png)
 
 11. **Verify Apache via Browser**  
    ![Step 11](images/11_website_working.png)
