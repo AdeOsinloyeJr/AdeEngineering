@@ -7,9 +7,10 @@ Welcome to my cloud engineering project portfolio. I'm passionate about building
 
 ## 👨‍💻 Cloud & Infrastructure Projects
 
-### 🔹 [Deploying Apache and Chrony on EC2](./ec2-apache-chrony-setup/README.md)
+### 🔹 [Deploying Apache and Chrony on EC2](./ec2-apache-chrony-setup_project/Apache-Chrony-EC2-README.md)
 Launch and configure a web server using Apache (`httpd`) on Amazon Linux 2023, with `chronyd` for time synchronization. Includes Linux package management, service configuration, and browser verification.
 > **Tools:** AWS EC2, Amazon Linux, systemctl, yum, rpm
+    🔹[See screenshots](./ec2-apache-chrony-setup_project/images/)
 
 ### 🔹 SCP File Transfer Between EC2s *(Coming Soon)*
 Setup of two EC2 instances to securely transfer files using `scp`, with proper SSH key and permissions configuration.
