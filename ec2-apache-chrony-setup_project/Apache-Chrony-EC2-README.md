@@ -27,7 +27,7 @@ You’ll walk through:
    ![Step 1](images/01_EC2_Configuration1.png)
 
 2. **EC2 Configuration - Part 2**  
-   ![Step 2](images/02_EC2_configuration2.png)
+   ![Step 2](images/02_EC2_Configuration2.png)
 
 3. **Running EC2 Instance**  
    ![Step 3](images/03_Running_EC2_Instance.png)
@@ -48,13 +48,13 @@ You’ll walk through:
    ![Step 8](images/08_chrony_install.png)
 
 9. **Confirm Chrony Installation**  
-   ![Step 9](images/09_Chrony_confirmation.png)
+   ![Step 9](images/09_chrony_confirmation.png)
 
 10. **Enable Chrony Service**  
-   ![Step 10](images/10_Chrony_Enabled.png)
+   ![Step 10](images/10_Chrony_enabled.png)
 
 11. **Verify Apache via Browser**  
-   ![Step 11](images/11_Website_working.png)
+   ![Step 11](images/11_website_working.png)
 
 ---
 
