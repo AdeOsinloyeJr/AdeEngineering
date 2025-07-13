@@ -12,13 +12,11 @@ Launch and configure a web server using Apache (`httpd`) on Amazon Linux 2023, w
 > **Tools:** AWS EC2, Amazon Linux, systemctl, yum, rpm
     🔹[See screenshots](./ec2-apache-chrony-setup_project/images/)
 
-### 🔹 SCP File Transfer Between EC2s 
-- [SCP File Transfer Between EC2s](scp-file-transfer-ec2)
-  
+### 🔹 [SCP File Transfer Between EC2s](scp-file-transfer-ec2)
   Setup of two EC2 instances to securely transfer files using `scp`, with proper SSH key and permissions configuration. Bash scripts are used to automate instance provisioning, and transferred files are served with Apache.
 
   ▸ Tools: EC2, SSH, SCP, Apache, Bash  
-  🔹[See screenshots](./scp-file-transfer-ec2/images/)
+      🔹[See screenshots](./scp-file-transfer-ec2/images/)
 
 ---
 
