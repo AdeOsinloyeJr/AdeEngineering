@@ -25,6 +25,11 @@ Launch and configure a web server using Apache (`httpd`) on Amazon Linux 2023, w
 
 🔹 [See Full Project with Screenshots](./scp-file-transfer-ec2/images/)
 
+### 🔹 [Three-Tier AWS Architecture Deployment](./three-tier-aws-architecture/README.md)
+Build a **highly available 3-tier architecture** on AWS featuring **public and private subnets**, **Application Load Balancer**, **Auto Scaling Group**, and **Amazon RDS**. Includes a Bastion host for secure access, custom Launch Templates with user data, and optional advanced features like **CloudTrail**, **Lambda**, and **CloudWatch**.  
+> **Tools:** VPC, Subnets, IGW, NAT Gateways, Route Tables, Security Groups, ALB, ASG, RDS, Bash Scripting  
+🔹 [See screenshots](./three-tier-aws-architecture/images/)
+
 ---
 
 ## 📄 Certifications
