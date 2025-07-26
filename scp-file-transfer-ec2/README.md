@@ -34,7 +34,7 @@ EC2‑A  ──(SSH/SCP 22)──►  EC2‑B  →  /var/www/html/index.html  �
 
 ### 4 ▪️ Generate SSH key‑pair on **EC2‑A**
 ```bash
-ssh-keygen -t rsa
+ssh-keygen
 ```
 ![Step 4](images/04_ssh-keygen-run_EC2A.png)
 
@@ -64,7 +64,7 @@ sudo systemctl restart sshd
 
 ### 11 ▪️ Secure‑copy `solution1.txt` from EC2‑A to EC2‑B
 ```bash
-scp ~/solution1.txt ec2-user@<EC2-B-IP>:/home/ec2-user/
+scp /home/ec2-user/solution1.txt ec2-user@44.198.53.64:/home/ec2-user/
 ```
 ![Step 11](images/11-SendingFileFrom_EC2A-EC2B-viaSCP.png)
 
