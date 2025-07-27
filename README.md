@@ -9,15 +9,15 @@ Welcome to my cloud engineering project portfolio. I'm passionate about building
 
 ---
 
-### 🔹 [AWS Root Account Monitoring with CloudTrail, SNS & EventBridge](./root-account-monitoring/README.md)
+### 🔹 [AWS Root Account Monitoring with CloudTrail, SNS & EventBridge](./Root%20Account%20Monitoring%20Project/README.md)
 Set up a **real-time monitoring and alerting system** for AWS **root account logins** using **CloudTrail**, **Amazon SNS**, and **EventBridge**. Detect high-privilege activity and send **instant email notifications** for security and compliance.
 > **Key Features:**
 - CloudTrail logging with **S3 + KMS encryption**
 - EventBridge rule for root login detection
 - SNS email notifications for alerts
-- MFA security discussion + best practices
+- MFA security discussion + best practices  
 > **Tools:** AWS CloudTrail, EventBridge, SNS, IAM, KMS  
-🔹 [See Full Project with Screenshots](./root-account-monitoring/images/)
+🔹 [See Full Project with Screenshots](./Root%20Account%20Monitoring%20Project/images/)
 
 ---
 
