@@ -43,9 +43,9 @@ We accessed the **Billing Dashboard** to simulate a high-privilege action.
 
 > **Note:** This was a **read-only view** for demonstration purposes. In production, root usage should be minimized.
 
-![Simulate Root Account Activity](1.%20Simulate%20Root%20Account%20Activity.png)
+![Simulate Root Account Activity](images/1.%20Simulate%20Root%20Account%20Activity.png)
 
-![View Private Billing Info](2.%20View%20Private%20Billing%20Info.png)
+![View Private Billing Info](images/2.%20View%20Private%20Billing%20Info.png)
 
 ---
 
@@ -54,7 +54,7 @@ To simulate an environment where root security is weakened, MFA was removed temp
 
 > **⚠ Security Note:** In real-world setups, never disable MFA. This is purely for lab testing.
 
-![Remove MFA from Root User](3.%20Remove%20MFA%20from%20Root%20User.png)
+![Remove MFA from Root User](images/3.%20Remove%20MFA%20from%20Root%20User.png)
 
 ---
 
@@ -64,7 +64,7 @@ To simulate an environment where root security is weakened, MFA was removed temp
 - Enable **SSE-KMS encryption** with a KMS alias: `alias/root-log-encryption`.
 - Enable **SNS notification delivery** and select/create SNS topic: `RootManagement_Topic`.
 
-![CloudTrail Creation](4.%20Cloud%20Trail%20Creation.png)
+![CloudTrail Creation](images/4.%20Cloud%20Trail%20Creation.png)
 
 ---
 
@@ -74,7 +74,7 @@ To simulate an environment where root security is weakened, MFA was removed temp
 - Create a subscription with your email address.
 - You will receive a confirmation email.
 
-![SNS Subscription](5.%20Subscription%20For%20Topic%20Created.png)
+![SNS Subscription](images/5.%20Subscription%20For%20Topic%20Created.png)
 
 ---
 
@@ -98,18 +98,18 @@ To simulate an environment where root security is weakened, MFA was removed temp
 5. Set target as **SNS topic → RootManagement_Topic**.
 6. Allow EventBridge to create an IAM role for SNS invocation.
 
-![EventBridge Rule Detail](6a.%20Creation%20of%20EventBridge%20Rule.png)
+![EventBridge Rule Detail](images/6a.%20Creation%20of%20EventBridge%20Rule.png)
 
-![Rule Event Pattern](6b.%20Rule%20configuration.png)
+![Rule Event Pattern](images/6b.%20Rule%20configuration.png)
 
-![SNS Target Selection](6c.%20SNS%20Target%20Selection.png)
+![SNS Target Selection](images/6c.%20SNS%20Target%20Selection.png)
 
 ---
 
 ### **Step 6: Confirm SNS Subscription**
 Before testing, confirm your SNS subscription from your email inbox.
 
-![SNS Email Confirmation](7.%20Confirm%20Subscription%20via%20email.png)
+![SNS Email Confirmation](images/7.%20Confirm%20Subscription%20via%20email.png)
 
 ---
 
@@ -117,7 +117,7 @@ Before testing, confirm your SNS subscription from your email inbox.
 - Log out and log back in as root user.
 - Within a minute, you should receive an SNS email alert.
 
-![SNS Alert Working](8.%20SNS%20alert%20working.png)
+![SNS Alert Working](images/8.%20SNS%20alert%20working.png)
 
 ---
 
