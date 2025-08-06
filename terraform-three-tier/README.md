@@ -209,7 +209,6 @@ terraform init -reconfigure
 
 ```
 
-![root backend init.png](images/root-backend-init.png)
 
 ---
 
