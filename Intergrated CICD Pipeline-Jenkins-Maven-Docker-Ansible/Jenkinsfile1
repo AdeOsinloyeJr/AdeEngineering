@@ -3,32 +3,32 @@
                 jdk 'myjava'
                 maven 'mymaven'
             }
-            agent any
+            agent none
             stages{
-                stage('Checkout on master'){
+                stage('Checkout'){
                     agent any
                     steps{
                 echo 'cloning...'
                         git 'https://github.com/RayItern/DevOpsCodeDemo-1.git'
                     }
                 }
-                stage('Compile on slave1'){
+                stage('Compile'){
                     agent {label 'slave1'}
                     steps{
                         echo 'compiling...'
                         sh 'mvn compile'
                 }
                 }
-                stage('CodeReview on slave1'){
-                    agent {label 'slave1'}
+                stage('CodeReview'){
+                    agent {label 'slave2'}
                     steps{
                     
                 echo 'codeReview...'
                         sh 'mvn pmd:pmd'
                     }
                 }
-                stage('UnitTest on slave1'){
-                    agent {label 'slave1'}
+                stage('UnitTest'){
+                    agent {label 'slave2'}
                     steps{
                     echo 'Testing'
                         sh 'mvn test'
@@ -39,7 +39,7 @@
                     }
                 }	
                 }
-                stage('Package ON master'){
+                stage('Package'){
                     agent any
                     steps{
                         sh 'mvn package'

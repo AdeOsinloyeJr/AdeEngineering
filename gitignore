@@ -1,23 +1,19 @@
-# Ignore Terraform directories and state files
-**/.terraform/*
+# Ignore Terraform state files and local directories
+.terraform/
 *.tfstate
-*.tfstate.*
-crash.log
-*.backup
-*tfstate
-*updated_state
-*terraform
-terraform
-
-# Ignore Terraform plan files
+*.tfstate.backup
 *.tfplan
 
-# Ignore SSH private keys
+# Ignore crash logs and backups
+crash.log
+*.backup
+
+# Ignore SSH keys and key files
 *.pem
 *.ppk
 *.key
 keys/*
 !keys/*.pub
 
-# OS-specific junk
+# Ignore OS-specific junk
 .DS_Store
