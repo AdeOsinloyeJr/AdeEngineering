@@ -1,7 +1,7 @@
-# 👋 Hi, I'm Ade!  
+# 👋 Hi, I'm Ade!  
 ### 🚀 Aspiring DevOps & Cloud Engineer
 
-Welcome to my **Cloud Engineering Project Portfolio**! I’m passionate about building and automating cloud infrastructure using **AWS**, **Linux**, and modern **DevOps practices**.  
+Welcome to my **Cloud Engineering Project Portfolio**! I’m passionate about building and automating cloud infrastructure using **AWS**, **Linux**, and modern **DevOps practices**.  
 This repository contains **hands-on, real-world projects** designed to showcase practical skills in cloud architecture, automation, and security.
 
 ---
@@ -10,17 +10,18 @@ This repository contains **hands-on, real-world projects** designed to showcase 
 
 ---
 
-### 🔹 [AWS Root Account Monitoring with CloudTrail, SNS & EventBridge](./Root%20Account%20Monitoring%20Project/README.md)
-Set up a **real-time monitoring and alerting system** for AWS **root account logins** using **CloudTrail**, **Amazon SNS**, and **EventBridge**. Detect high-privilege activity and send **instant email notifications** for security and compliance.
+### 🔹 [Terraform Three-Tier AWS Architecture Deployment](./terraform-three-tier/README.md)
+Build and deploy a **highly available and scalable 3-tier architecture** on AWS using **Terraform** for Infrastructure as Code (IaC). This project features **public and private subnets**, an **Application Load Balancer (ALB)**, **Auto Scaling Group (ASG)**, and **Amazon RDS**, all defined and managed with a robust, repeatable workflow.
 
 **Key Features:**
-- CloudTrail logging with **S3 + KMS encryption**
-- EventBridge rule for root login detection
-- SNS email notifications for alerts
-- MFA security discussion + best practices
+- Automated deployment of custom VPC across two AZs
+- Scalable web tier with **ALB + ASG**
+- Secure database tier using **Amazon RDS** in a private subnet
+- Hardened **Security Groups** and **NAT Gateway** configuration
+- Single command deployment and teardown with `terraform apply` and `terraform destroy`
 
-> **Tools:** AWS CloudTrail, EventBridge, SNS, IAM, KMS  
-🔹 [View Full Project & Screenshots](./Root%20Account%20Monitoring%20Project/images/)
+> **Tools:** Terraform, AWS CLI, VPC, EC2, ALB, ASG, RDS, Route Tables, NAT Gateway, Security Groups  
+🔹 [View Full Project & Screenshots](./terraform-three-tier/images/)
 
 ---
 
@@ -34,8 +35,22 @@ Build and deploy a **highly available and scalable 3-tier architecture** on AWS 
 - **Amazon RDS** in private subnet for secure DB layer
 - Hardened **Security Groups & NACLs**
 
-> **Tools:** AWS VPC, EC2, ALB, ASG, RDS, Route Tables, NAT Gateway, Security Groups, Bash Scripting  
+> **Tools:** AWS VPC, EC2, ALB, ASG, RDS, Route Tables, NAT Gateway, Security Groups, Bash Scripting  
 🔹 [View Full Project & Screenshots](./three-tier-aws-architecture/images/)
+
+---
+
+### 🔹 [AWS Root Account Monitoring with CloudTrail, SNS & EventBridge](./Root%20Account%20Monitoring%20Project/README.md)
+Set up a **real-time monitoring and alerting system** for AWS **root account logins** using **CloudTrail**, **Amazon SNS**, and **EventBridge**. Detect high-privilege activity and send **instant email notifications** for security and compliance.
+
+**Key Features:**
+- CloudTrail logging with **S3 + KMS encryption**
+- EventBridge rule for root login detection
+- SNS email notifications for alerts
+- MFA security discussion + best practices
+
+> **Tools:** AWS CloudTrail, EventBridge, SNS, IAM, KMS  
+🔹 [View Full Project & Screenshots](./Root%20Account%20Monitoring%20Project/images/)
 
 ---
 
@@ -48,7 +63,7 @@ Deploy and configure **Apache web server** and **Chrony (NTP)** on **Amazon Linu
 - Configure **Chronyd** for network time protocol (NTP)
 - Validate via browser and CLI checks
 
-> **Tools:** AWS EC2, Amazon Linux 2023, systemctl, yum, rpm, Apache, Chrony  
+> **Tools:** AWS EC2, Amazon Linux 2023, systemctl, yum, rpm, Apache, Chrony  
 🔹 [View Full Project & Screenshots](./ec2-apache-chrony-setup_project/images/)
 
 ---
@@ -62,7 +77,7 @@ Demonstrates how to **securely transfer files between two EC2 instances** using 
 - Configure **Apache** on destination EC2 to serve the file
 - Validate via **browser access**
 
-> **Skills:** EC2 provisioning, SSH, SCP, Apache, Linux file permissions, Bash scripting  
+> **Skills:** EC2 provisioning, SSH, SCP, Apache, Linux file permissions, Bash scripting  
 🔹 [View Full Project & Screenshots](./scp-file-transfer-ec2/images/)
 
 ---
@@ -77,4 +92,4 @@ Demonstrates how to **securely transfer files between two EC2 instances** using 
 
 ---
 
-💡 *Upcoming Projects:* Terraform IaC, Jenkins + Ansible automation, Docker, Kubernetes, and AWS Monitoring solutions.
+💡 *Upcoming Projects:* Jenkins + Ansible automation, Docker, Kubernetes, and AWS Monitoring solutions.
