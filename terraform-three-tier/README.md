@@ -1,6 +1,6 @@
 # **Terraform AWS 3-Tier Architecture**
 
-![Architecture Diagram](attachment:bb9097f7-7112-47ab-ae00-f19bf033e7d2:3-tier-archi.jpg)
+![Architecture Diagram](images/3-tier-archi.jpg)
 
 ---
 
@@ -209,7 +209,7 @@ terraform init -reconfigure
 
 ```
 
-![root backend init.png](attachment:dcd1bcba-e1bf-4c48-958a-5961c7a4484e:root_backend_init.png)
+![root backend init.png](images/root-backend-init.png)
 
 ---
 
@@ -437,7 +437,7 @@ data "aws_availability_zones" "available" {}
 
 `modules/vpc/outputs.tf`
 
-*Take note that we configured outputs here for the VPC. If we would like we could add these to our main [outputs.tf](http://outputs.tf) file to get these values when we finally do our final terraform apply. 
+*Take note that we configured outputs here for the VPC. If we would like we could add these to our main [outputs.tf] file to get these values when we finally do our final terraform apply. 
 
 Additionally outputs expose important IDs created by the VPC module (like VPC ID, public and private subnets) so that other modules (Security Groups, ALB, ASG, RDS) can use them. Without these outputs, we cannot dynamically link our modules together.
 
@@ -570,7 +570,7 @@ output "db_sg_id" { value = aws_security_group.db.id }
 
 `modules/security/variables.tf`
 
-```
+```hcl
 variable "vpc_id" {}
 variable "my_ip" {
   description = "73.184.63.221/32"
@@ -626,7 +626,7 @@ Terraform is using the local public key we made to create a key pair in AWS, and
 
 Here you can see instead of hardcoding this entire script is made up of variables. This is important for replicability and reuse. Everything defined is being pulled from variables we have pre defined earlier in our infra.
 
-```
+```hcl
 resource "aws_instance" "bastion" {
   ami = var.image_id
   instance_type               = var.instance_type
@@ -908,7 +908,7 @@ terraform apply
 
 ```
 
-![Final Terraform Apply.png](attachment:3fb66d46-ba8d-4f47-b7d4-948dfbd2e413:1f7a26aa-2181-4b95-b0f0-23ffa57ab2d4.png)
+![Final Terraform Apply.png](images/final-terraform-apply.png)
 
 ---
 
@@ -916,30 +916,30 @@ terraform apply
 
 1. **Outputs:** `terraform output`
     
-    ![Terraform-Output.png](attachment:fba91c67-38c2-41da-bb96-4f93bce62938:Terraform-Output.png)
+    ![Terraform-Output.png](images/Terraform-Output.png)
     
 
 1. **Test ALB:** `curl http://$(terraform output -raw alb_dns_name)`
     
-    ![Test ALB.png](attachment:a5e1154f-00fb-4470-bff4-e632282205e1:Test_ALB.png)
+    ![Test ALB.png](images/Test-ALB.png)
     
-    ![ALB-DNS.png](attachment:125d38fa-4672-47e8-98c9-b214e75098db:ALB-DNS.png)
+    ![ALB-DNS.png](images/ALB-DNS.png)
     
 
 1. **SSH to Bastion:** `ssh -i LaptopKey.pem ubuntu@<bastion_public_ip>`
     
-    ![SSH-Into-Bastion.png](attachment:088fa1e4-a9fe-4072-ac4c-c552a578ad83:SSH-Into-Bastion.png)
+    ![SSH-Into-Bastion.png](images/SSH-Into-Bastion.png)
     
 
 1. **Copy private key to Bastion & SSH into App:** `scp -i LaptopKey.pem LaptopKey.pem ubuntu@<bastion_public_ip>:/home/ubuntu/`
 
-![SCP-Key-Transfer.png](attachment:74e3d710-bebc-4a57-8b17-aad34fd94b47:SCP-Key-Transfer.png)
+![SCP-Key-Transfer.png](images/SCP-Key-Transfer.png)
 
 1. **Stress Test:** `sudo stress --cpu 50 --timeout 500`
 
 Activation of stress test in App server
 
-![Activate-Stress-Test.png](attachment:f21de30f-2097-45c5-b81d-0182cc0a9a5e:Activate-Stress-Test.png)
+![Activate-Stress-Test.png](images/Activate-Stress-Test.png)
 
 Results of stress test:
  - New instance provisioned
@@ -948,21 +948,21 @@ Results of stress test:
 
  - Cloud watch in alarm state
 
-![Stress-Test-Scale-Up.png](attachment:26ad065d-bd93-444c-8d92-e5b2943c38e5:Stress-Test-Scale-Up.png)
+![Stress-Test-Scale-Up.png](images/Stress-Test-Scale-Up.png)
 
 1. **Test RDS Connection:** `mysql -h <rds_endpoint> -u admin -p`
 
 Successful Access: `mysql>`
 
-![Database-access.png](attachment:c909fe0e-07a3-4a85-97b9-1cee73440a63:Database-access.png)
+![Database-access.png](images/Database-access.png)
 
 ### Additional Photos:
 
-![AWS-VPC-VIEW.png](attachment:46159742-78b2-479e-82d8-4b5a86bba5bd:AWS-VPC-VIEW.png)
+![AWS-VPC-VIEW.png](images/AWS-VPC-VIEW.png)
 
-![Terraform-State-List.png](attachment:c3f43029-4a74-47b3-870b-20fe9195c7cd:Terraform-State-List.png)
+![Terraform-State-List.png](images/Terraform-State-List.png)
 
-![TfState-in-S3.png](attachment:b0b5c43a-ab1a-4208-93fb-f01170181f98:TfState-in-S3.png)
+![TfState-in-S3.png](images/TfState-in-S3.png)
 
 ---
 
@@ -973,4 +973,4 @@ terraform destroy
 
 ```
 
-![image.png](attachment:4e079c7c-4555-4724-a9f5-642963f710d1:image.png)
+![Terraform Destroy](images/Terraform-destroy.png)
