@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Ade!  
-### 🚀 Aspiring DevOps & Cloud Engineer
+### 🚀 DevOps & Cloud Engineer
 
-Welcome to my **Cloud Engineering Project Portfolio**! I’m passionate about building and automating cloud infrastructure using **AWS**, **Linux**, and modern **DevOps practices**.  
-This repository contains **hands-on, real-world projects** designed to showcase practical skills in cloud architecture, automation, and security.
+Welcome to my DevOps & Cloud Engineering Portfolio! I’m passionate about designing, automating, and securing cloud infrastructure across AWS, Azure, and GCP.
+This repository highlights hands-on, real-world projects that demonstrate practical skills in infrastructure as code, CI/CD, container orchestration, and cloud security — all focused on building scalable and resilient systems.
 
 ---
 
