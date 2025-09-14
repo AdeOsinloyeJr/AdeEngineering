@@ -2,7 +2,7 @@
 ### 🚀 DevOps & Cloud Engineer
 
 Welcome to my DevOps & Cloud Engineering Portfolio! I’m passionate about designing, automating, and securing cloud infrastructure across AWS, Azure, and GCP.
-This repository highlights hands-on, real-world projects that demonstrate practical skills in infrastructure as code, CI/CD, container orchestration, and cloud security — all focused on building scalable and resilient systems.
+This repository highlights hands-on, real-world projects that demonstrate practical skills in infrastructure as code, CI/CD, container orchestration, and cloud security. All focused on building scalable and resilient systems.
 
 ---
 
